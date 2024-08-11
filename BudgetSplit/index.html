@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgeting with Friends</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Budget Calculator</h1>
+        <label for="totalAmount">Enter Amount Spent:</label>
+        <input type="number" id="totalAmount" required>
+        <button id="submitBtn">Submit</button>
+        
+        <div id="results" style="display:none;">
+            <h2>Contributions</h2>
+            <p>Nadir: <span id="nadir"></span></p>
+            <p>Abadullah: <span id="abadullah"></span></p>
+            <p>Yasir: <span id="yasir"></span></p>
+            <button id="showContributionsBtn">Show Individual Contributions</button>
+        </div>
+
+        <div id="individualContributions" style="display:none;">
+            <h2>Individual Contributions</h2>
+            <div id="contributionCards"></div>
+            <button id="showTotalContributionsBtn">Show Total Contributions</button>
+        </div>
+
+        <div id="totalContributions" style="display:none;">
+            <h2>Total Contributions</h2>
+            <div id="totalCards"></div>
+            <button id="backToIndividualBtn">Back to Individual Contributions</button>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
